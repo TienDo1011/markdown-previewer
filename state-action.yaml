@@ -1,20 +1,6 @@
 App:
   state:
-    currentSeries
-    playerSeries
-    isOn
-    strict
-    player
-    lost
+    input
   actions:
-    PLAYER_CLICK
-    TOGGLE_ON
-    TOGGLE_STRICT
-    SIMON_CLICK
-
-
-
-PLAYER_CLICK: 
-  strict on
-  strict off
+    ONKEYUP
   

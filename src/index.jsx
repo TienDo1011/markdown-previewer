@@ -1,33 +1,10 @@
-/**
-state = {
-  currentSeries
-  playerSeries
-  isOn
-  strict
-  player
-  lost
-}
- */
-
-import { createStore } from 'redux';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import App from './components/containers/App.jsx';
-import simon from './reducers';
-
-/* eslint-disable no-underscore-dangle */
-const store = createStore(
-  simon,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-/* eslint-enable */
+import App from './components/App.jsx';
 
 const render = () => {
   ReactDOM.render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
+    <App />,
     document.getElementById('root'),
   );
 };
