@@ -1,13 +1,11 @@
-## Pomodoro app
+## Markdown previewer
 
-A basic pomodoro written with Javascript (ES2015), React.js, Redux & Webpack.
+A basic Markdown previewer written with Javascript (ES2015), React.js, Webpack.
+Translation using [Marked](https://github.com/chjj/marked) library
 
 Function:
 
-* Set break time
-* Set Pomodoro time
-* Set long break time
-* Set Iteration
+* Markdown Previewer with real time update
 
 ### Development
 
