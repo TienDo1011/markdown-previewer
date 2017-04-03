@@ -9,12 +9,17 @@ class App extends Component {
       input: '',
     };
     this.translate = this.translate.bind(this);
+    this.createMarkup = this.createMarkup.bind(this);
   }
 
   translate(evt) {
     this.setState({
       input: evt.target.value,
     });
+  }
+
+  createMarkup(input) {
+    return { __html: marked(input) };
   }
 
   render() {
@@ -33,7 +38,7 @@ class App extends Component {
               </FormGroup>
             </Col>
             <Col xs={6}>
-              {(this.state.input)}
+              <div dangerouslySetInnerHTML={this.createMarkup(this.state.input)} />
             </Col>
           </Row>
         </Grid>
